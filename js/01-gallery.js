@@ -22,10 +22,9 @@ gallery.addEventListener("click", (e) => {
   if (e.target.nodeName !== "IMG") {
     return;
   }
+  const instance = basicLightbox.create(`
+        <img src=${e.target.getAttribute("src")}>
+    `);
 
-  //     const instance = basicLightbox.create(`
-  //       <img src=${}>
-  //   `);
-
-  //     instance.show();
+  instance.show();
 });
