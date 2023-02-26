@@ -17,3 +17,15 @@ const markup = galleryItems
   .join("");
 const gallery = document.querySelector(".gallery");
 gallery.innerHTML = markup;
+gallery.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (e.target.nodeName !== "IMG") {
+    return;
+  }
+
+  //     const instance = basicLightbox.create(`
+  //       <img src=${}>
+  //   `);
+
+  //     instance.show();
+});
