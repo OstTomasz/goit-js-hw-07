@@ -25,6 +25,11 @@ gallery.addEventListener("click", (e) => {
   const instance = basicLightbox.create(`
         <img src=${e.target.getAttribute("src")}>
     `);
-
   instance.show();
+
+  gallery.addEventListener("keydown", (evt) => {
+    if (evt.key === "Escape") {
+      instance.close();
+    }
+  });
 });
