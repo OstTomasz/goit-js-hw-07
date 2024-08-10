@@ -16,3 +16,16 @@ body {
 a {
   color: white;
 }
+
+/* task 2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.gallery__element {
+  list-style: none;
+}
+.pic {
+  height: 300px;
+}
